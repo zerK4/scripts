@@ -1,0 +1,86 @@
+
+
+#projects{
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    cursor: grab;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: initial;
+    height: 27rem;
+    width: 95vw;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.container::-webkit-scrollbar {
+    width: 1rem;
+}
+.container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgb(51, 8, 103, .5);
+    outline: none;
+}
+.pokeCard{
+    border-radius: 10px;
+    width: 20rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+    background-image: linear-gradient(to bottom, rgb(67, 67, 67, .7) 0%, rgb(0, 0, 0, .7) 100%);
+    box-shadow: 1px 1px 5px 1px black;
+    color: whitesmoke;
+    position: relative;
+}
+.info-ball{
+    position: absolute;
+    font-size: 1.3rem;
+    top: 2%;
+    left: 2%;
+    cursor:help;
+}
+.p-info{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    background: rgb(24, 24, 24);
+    box-shadow: 1px 1px 5px 1px black;
+    height: auto;
+    width: 17rem;
+    border-radius: 10px;
+    padding: 1rem;
+    display: none;
+    font-size: .9rem;
+    color: whitesmoke;
+    cursor: crosshair;
+}
+.info-ball:hover .p-info{
+    display: flex;
+}
+.pokeCard img{
+    height: 10rem;
+}
+.top-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+}
+.name-container{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    justify-content: space-evenly;
+}
